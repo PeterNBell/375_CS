@@ -18,7 +18,6 @@ import random
 
 def main():
     display_welcome()
-
     play_again = True
     while play_again:
         total = roll_dice()
@@ -30,7 +29,7 @@ def main():
             re_roll(total)
 
         print() # Blank line for spacing
-        play_again = (input("Press enter to play another round or type 'N' to quit ") == '')
+        play_again = (input("Enter Y to play another round ") == 'Y')
         clear_screen()
 
 
@@ -46,7 +45,6 @@ def display_welcome():
     print("$                                              $")
     print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
     print()
-
 
 def roll_dice():
     input("Press Enter to roll the dice...") # We don't do anything with the input, we're just using it to pause the game
