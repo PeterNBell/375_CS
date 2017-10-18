@@ -5,9 +5,14 @@ def main():
     print("In each room you have 3 options: Search for the key, listen for the monster and exit the room")
     what = input("Are you ready?")
     print("GREAT!!!")
-from random import randrange, uniform
-spawnroom = randrange(0, 10)
-print("you are starting in room", spawnroom)
+spawnroom = 0
 enemyspawn = 0
+from random import randrange, uniform
+spawnroom = randrange(1, 16) #16 rooms, player spawns in 1
+print("you are starting in room", spawnroom)
+enemyspawn = randrange(1,16)
+while enemyspawn == spawnroom: #if the rooms are the same the first time then make sure the rooms are different
+    enemyspawn = randrange(1,16)
+print("The enemy spawned in room", enemyspawn)
 main()
-#lolofnafjwjfhwauoiskjfdsjawksldjnfhuajidKS
+
