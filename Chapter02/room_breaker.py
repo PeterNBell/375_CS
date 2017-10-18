@@ -6,6 +6,8 @@ def main():
     what = input("Are you ready?")
     print("GREAT!!!")
 from random import randrange, uniform
-irand = randrange(0, 10)
-print(irand)
+spawnroom = randrange(0, 10)
+print("you are starting in room", spawnroom)
+enemyspawn = 0
 main()
+#lolofnafjwjfhwauoiskjfdsjawksldjnfhuajidKS
